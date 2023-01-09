@@ -1,0 +1,21 @@
+nimTitle	paths	ups/paths.html	module ups/paths		0
+nim	normal	ups/paths.html#normal,string	proc normal(path: string): string		16
+nim	parentDir	ups/paths.html#parentDir,AbsoluteDir	proc parentDir(dir: AbsoluteDir): AbsoluteDir		36
+nim	parentDir	ups/paths.html#parentDir,AbsoluteFile	proc parentDir(dir: AbsoluteFile): AbsoluteDir		40
+nim	hash	ups/paths.html#hash,AbsoluteDir	proc hash(p: AbsoluteDir): Hash		51
+nim	hash	ups/paths.html#hash,AbsoluteFile	proc hash(p: AbsoluteFile): Hash		55
+nim	toAbsoluteDir	ups/paths.html#toAbsoluteDir,string	proc toAbsoluteDir(s: string): AbsoluteDir		59
+nim	toAbsoluteFile	ups/paths.html#toAbsoluteFile,string	proc toAbsoluteFile(s: string): AbsoluteFile		67
+nim	withinDirectory	ups/paths.html#withinDirectory.t,AbsoluteDir,untyped	template withinDirectory(path: AbsoluteDir; body: untyped): untyped		75
+nim	withinDirectory	ups/paths.html#withinDirectory.t,string,untyped	template withinDirectory(path: string; body: untyped): untyped		86
+nim	startsWith	ups/paths.html#startsWith,AbsoluteDir,AbsoluteDir	proc startsWith(path: AbsoluteDir; parent: AbsoluteDir): bool		90
+nim	startsWith	ups/paths.html#startsWith,AbsoluteDir,string	proc startsWith(path: AbsoluteDir; parent: string): bool		100
+nim	startsWith	ups/paths.html#startsWith,AbsoluteFile,string	proc startsWith(path: AbsoluteFile; s: string): bool		105
+nim	endsWith	ups/paths.html#endsWith,AbsoluteDir,string	proc endsWith(path: AbsoluteDir; s: string): bool		109
+nim	endsWith	ups/paths.html#endsWith,AbsoluteFile,string	proc endsWith(path: AbsoluteFile; s: string): bool		113
+nim	isRootDir	ups/paths.html#isRootDir,AbsoluteDir	proc isRootDir(path: AbsoluteDir): bool		117
+nimgrp	startswith	ups/paths.html#startsWith-procs-all	proc		90
+nimgrp	parentdir	ups/paths.html#parentDir-procs-all	proc		36
+nimgrp	endswith	ups/paths.html#endsWith-procs-all	proc		109
+nimgrp	hash	ups/paths.html#hash-procs-all	proc		51
+nimgrp	withindirectory	ups/paths.html#withinDirectory-templates-all	template		75
